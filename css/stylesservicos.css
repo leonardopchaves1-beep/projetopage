@@ -75,8 +75,14 @@ h1{
     }
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 a {
     color: #fff;
+    ;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -90,6 +96,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items:center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     background-image: linear-gradient(to right, #170502, #571406, #7D1C09);
     height: 8vh;
 }
@@ -121,12 +128,6 @@ nav {
     transition: 0.3s;
 }
 
-
-@media (max-width: 600px) {
-    .services-grid {
-        gap: 120px; /* Aumenta o espaço vertical quando um balão estiver sob o outro */
-    }
-}
 @media (max-width: 999px) {
     body {
         overflow-x: hidden;
@@ -144,19 +145,20 @@ nav {
         justify-content: space-around;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
-        z-index: 1000;
     }
 
     .nav-list li {
+        margin-left: 0;
         opacity: 0;
     }
 
     .mobile-menu {
         display: block;
     }
+
     .logo-menu{
         width: 120px;
-        height: 120px;
+        margin-left: 1px;
     }
 }
 
@@ -192,12 +194,17 @@ nav {
     font-family: 'Montserrat', sans-serif;
 }
 
-h4 {
+h1, h2, h3, h4 {
     font-weight: 100;
 }
 
 p, li, a, span {
     font-weight: 400;
+}
+
+small {
+    
+    font-weight: 300;
 }
 
 
