@@ -81,10 +81,6 @@ nav {
     transition: 0.3s;
 }
 
-.logo-menu{
-    width: 150px;
-}
-
 /* Formulario de contato */
 #fale-comigo {
     width: 95%;
@@ -220,9 +216,6 @@ nav {
 
     .mobile-menu {
         display: block;
-    }
-    .logo-menu{
-        width: 100px;
     }
 }
 

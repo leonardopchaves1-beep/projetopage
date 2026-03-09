@@ -10,7 +10,6 @@ body {
     overflow-x: hidden;
 }
 
-
 .caixa-cuidado,
 .caixa-bem-vindo {
     display: flex;
@@ -35,6 +34,8 @@ body {
     margin-top: 40px;
 }
 
+
+
 .texto {
     width: 500px;
     max-width: 100%;
@@ -56,6 +57,8 @@ body {
     width: 220px;
     height: auto;
 }
+
+
 
 .caixa-autoconhecimento {
     display: flex;
@@ -325,6 +328,8 @@ body {
         left: clamp(12%, 10vw, 20%);
         top: 50%;
         transform: translateY(-50%);
+        transition:
+            none
     }
     
     .letras li {
@@ -342,6 +347,7 @@ body {
         padding: 6px 10px;
         gap: 8px;
     
+        transition: transform 0.2s ease;
     }
     
     .pilar img {
