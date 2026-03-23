@@ -326,10 +326,8 @@ body {
         border-width: 3px;
         position: absolute;
         left: clamp(12%, 10vw, 20%);
-        top: 50%;
+        top: 47%;
         transform: translateY(-50%);
-        transition:
-            none
     }
     
     .letras li {
@@ -346,8 +344,6 @@ body {
         font-size: clamp(11px, 1.6vw, 13px);
         padding: 6px 10px;
         gap: 8px;
-    
-        transition: transform 0.2s ease;
     }
     
     .pilar img {
@@ -363,14 +359,6 @@ body {
     .pilar-4 { top: 52%; left: clamp(54%, 58%, 61%); }
     .pilar-5 { top: 62%; left: clamp(52%, 55%, 58%); }
 
-
-    .pilares-wrapper:hover .circulo {
-        transform: translateY(-50%) scale(1.03);
-    }
-    
-    .pilar:hover {
-        transform: translateX(6px);
-    }
 
 }
 
