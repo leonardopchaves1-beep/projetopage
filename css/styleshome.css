@@ -363,6 +363,12 @@ body {
 }
 
 @media (max-width: 480px) {
+    .caixa-cuidado,
+    .caixa-bem-vindo{
+        margin-right: 20px;
+    }
+    
+    
     .circulo {
     width: clamp(180px, 30vw, 220px);
     height: clamp(180px, 30vw, 220px);
