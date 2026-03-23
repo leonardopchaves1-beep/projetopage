@@ -1,17 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
-  /* ========= NAV ========= */
-  fetch("./nav.html")
-    .then((response) => response.text())
+  fetch("/nav.html")
+    .then((response) => {
+      if (!response.ok) throw new Error("Erro ao carregar nav");
+      return response.text();
+    })
     .then((data) => {
-      const nav = document.getElementById("nav");
-      if (nav) nav.innerHTML = data;
-    });
+      document.getElementById("nav").innerHTML = data;
+    })
+    .catch((error) => console.error(error));
 
-  /* ========= FOOTER ========= */
-  fetch("./footer.html")
-    .then((response) => response.text())
+  fetch("/footer.html")
+    .then((response) => {
+      if (!response.ok) throw new Error("Erro ao carregar footer");
+      return response.text();
+    })
     .then((data) => {
-      const footer = document.getElementById("footer");
-      if (footer) footer.innerHTML = data;
-    });
+      document.getElementById("footer").innerHTML = data;
+    })
+    .catch((error) => console.error(error));
 });

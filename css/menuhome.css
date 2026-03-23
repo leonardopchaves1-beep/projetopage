@@ -10,6 +10,8 @@
     align-items: center;
     height: 8vh;
     background-image: linear-gradient(to right, #170502, #571406, #7D1C09);
+    position: relative;
+    z-index: 1000;
   }
   
   .logo-menu {

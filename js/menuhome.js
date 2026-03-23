@@ -36,7 +36,7 @@ class MobileNavbar {
   }
 }
 
-/* 🔥 ESPERA O NAV SER INSERIDO PELO include.js */
+/*  ESPERA O NAV SER INSERIDO PELO include.js */
 document.addEventListener("DOMContentLoaded", () => {
   const navContainer = document.getElementById("nav");
 
