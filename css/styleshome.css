@@ -361,16 +361,20 @@ body {
 
 }
 
-@media (max-width: 480px) {
-    
+@media (max-width: 600px) {
+    .caixa-cuidado,
+    .caixa-bem-vindo {
+        margin-right: -40px;
+    }
+
     .circulo {
     width: clamp(180px, 30vw, 220px);
     height: clamp(180px, 30vw, 220px);
     border-width: 3px;
 
     position: absolute;
-    left: 28%;
-    top: 50%;
+    left: 23%;
+    top: 48%;
 
     transform: translate(-50%, -50%);
     }
