@@ -21,7 +21,7 @@
             <div class="contact-wrapper">
                 <br>
                 <div class="contact-conentair">
-                    <form id="fale-comigo">
+                    <form id="fale-comigo" novalidate>
                         <h2>Vamos Conversar?</h2>
                         <p class="subtitle">
                             Se você busca agendar uma sessão, tirar dúvidas ou iniciar seu processo terapêutico, entre
@@ -29,10 +29,11 @@
                             <br>
                             Garantimos total sigilo e acolhimento.
                         </p>
-                        <input type="text" name="nome" placeholder="Seu nome" required>
-                        <input type="email" name="email" placeholder="Seu e-mail" required>
-                        <input type="tel" name="telefone" placeholder="Seu telefone" required>
-                        <textarea name="mensagem" placeholder="Mensagem"></textarea>
+                        <input id="nome" type="text" name="nome" placeholder="Seu nome" />
+                        <input id="email" type="email" name="email" placeholder="Seu e-mail" />
+                        <input id="number" type="tel" name="telefone" placeholder="Seu telefone" />
+                        <textarea id="mensagem" name="mensagem" placeholder="Mensagem"></textarea>
+                        <p id="erro"></p>
                         <button type="submit">Enviar</button>
 
                         <div class="horario-atendimento">
